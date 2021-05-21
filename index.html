@@ -36,8 +36,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm col-md align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-md align-self-center">
+                    <a class="btn bg-warning col-12 text-white" role="button" href="#reserve-table"><strong> Reserve Table </strong></a>
                 </div>
             </div>
         </div>
@@ -64,8 +67,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img src="img/buffet.png" alt="buffet" class="d-flex ml-3 img-thumbnail align-self-center order-last">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -84,6 +92,60 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content align-items-center" id="reserve-table">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve A Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="no-of-guests" class="col-lg-4 col-form-label"> Number of guests </label>
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="1" checked> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">1</label> 
+                                </div>
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="2"> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">2</label> 
+                                </div>
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="3"> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">3</label>
+                                </div> 
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="4"> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">4</label> 
+                                </div>
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="5"> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">5</label> 
+                                </div>
+                                <div class="col-2 col-lg-1 pt-0">
+                                    <input type="radio" class="form-control focus-none" id="no-of-guests" name="no-of-guests" value="6"> 
+                                    <label for="no-of-guests" class="col-1 col-form-label">6</label> 
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-md-2 col-form-label"> Date </label>
+                                <div class="col-lg-4">
+                                    <input type="date" class="form-control" id="date" name="date">
+                                </div>
+                                <label for="time" class="col-md-2 col-form-label"> Time </label>
+                                <div class="col-lg-4">
+                                    <input type="time" class="form-control" id="time" name="time">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-lg-4 offset-lg-2">
+                                    <button class="btn btn-primary col-12" type="submit"> Reserve </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -95,7 +157,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
