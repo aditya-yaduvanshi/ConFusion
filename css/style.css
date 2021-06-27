@@ -55,3 +55,39 @@ address {
   left: 0;
   min-height: 300px;
 }
+.smoking-radio {
+  position: relative;
+}
+.smoking-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.smoking-radio label {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border: 2px solid;
+}
+.smoking-radio #smoking:checked ~ #smoking-label {
+  background-color: #d9534f;
+  color: white;
+}
+.smoking-radio #non-smoking:checked ~ #non-smoking-label {
+  background-color: #5cb85c;
+  color: white;
+}
+#non-smoking-label {
+  border-color: #5cb85c;
+  color: #5cb85c;
+}
+#smoking-label {
+  border-color: #d9534f;
+  color: #d9534f;
+}
